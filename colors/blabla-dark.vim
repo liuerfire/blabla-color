@@ -3,7 +3,7 @@
 " Webpage:     https://github.com/liuerfire/blabla-color
 " Description: A dark colour scheme with minimal syntax highlighting
 " Licence:     
-" Last Change: 2021-03-16
+" Last Change: 2021-05-27
 
 hi clear
 if exists("syntax_on")
@@ -24,7 +24,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Boolean ctermbg=NONE ctermfg=179 cterm=Italic guibg=NONE guifg=#d7af5f gui=Italic
     hi String ctermbg=NONE ctermfg=39 cterm=NONE guibg=NONE guifg=#00afff gui=NONE
     hi Identifier ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
-    hi Statement ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
+    hi Statement ctermbg=NONE ctermfg=132 cterm=NONE guibg=NONE guifg=#ec7279 gui=NONE
     hi Operator ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi PreProc ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi Type ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
@@ -82,7 +82,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Boolean ctermbg=NONE ctermfg=darkyellow cterm=Italic
     hi String ctermbg=NONE ctermfg=blue cterm=NONE
     hi Identifier ctermbg=NONE ctermfg=white cterm=NONE
-    hi Statement ctermbg=NONE ctermfg=white cterm=NONE
+    hi Statement ctermbg=NONE ctermfg=darkred cterm=NONE
     hi Operator ctermbg=NONE ctermfg=white cterm=NONE
     hi PreProc ctermbg=NONE ctermfg=white cterm=NONE
     hi Type ctermbg=NONE ctermfg=white cterm=NONE
