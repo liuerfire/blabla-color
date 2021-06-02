@@ -3,7 +3,7 @@
 " Webpage:     https://github.com/liuerfire/blabla-color
 " Description: A dark colour scheme with minimal syntax highlighting
 " Licence:     
-" Last Change: 2021-05-27
+" Last Change: 2021-06-02
 
 hi clear
 if exists("syntax_on")
@@ -13,12 +13,12 @@ endif
 let colors_name = "blabla-dark"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi Normal ctermbg=0 ctermfg=255 cterm=NONE guibg=#000000 guifg=#ffffff gui=NONE
+    hi Normal ctermbg=241 ctermfg=255 cterm=NONE guibg=#242424 guifg=#ffffff gui=NONE
 
     set background=dark
 
     hi NonText ctermbg=NONE ctermfg=238 cterm=NONE guibg=NONE guifg=#444444 gui=NONE
-    hi Comment ctermbg=NONE ctermfg=241 cterm=Italic guibg=NONE guifg=#626262 gui=Italic
+    hi Comment ctermbg=NONE ctermfg=241 cterm=Italic guibg=NONE guifg=#99968b gui=Italic
     hi Conceal ctermbg=NONE ctermfg=241 cterm=NONE guibg=NONE guifg=#626262 gui=NONE
     hi Constant ctermbg=NONE ctermfg=255 cterm=NONE guibg=NONE guifg=#ffffff gui=NONE
     hi Boolean ctermbg=NONE ctermfg=179 cterm=Italic guibg=NONE guifg=#d7af5f gui=Italic
@@ -71,7 +71,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
 elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     set t_Co=16
 
-    hi Normal ctermbg=black ctermfg=white cterm=NONE
+    hi Normal ctermbg=darkgray ctermfg=white cterm=NONE
 
     set background=dark
 
